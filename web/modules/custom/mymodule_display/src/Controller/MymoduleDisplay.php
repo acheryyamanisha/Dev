@@ -14,6 +14,7 @@ class MymoduleDisplay extends ControllerBase
         $config = \Drupal::config('mymodule.adminsettings');
         $title = $config->get('title');
         $hobby = $config->get('hobby');
+
         $gender = $config->get('gender');
         return array(
         '#type' => 'markup',
