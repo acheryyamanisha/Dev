@@ -1,0 +1,7 @@
+mymodule.admin_settings_form:
+  path: '/mymodule/config'
+  defaults:
+    _form: '\Drupal\mymodule\Form\MessagesForm'
+    _title: 'MessagesForm'
+  requirements:
+    _permission: 'access content'

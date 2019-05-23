@@ -1,0 +1,9 @@
+<?php
+
+// function mymodule_credentials($account) {
+//   $config = \Drupal::config('mymodule.adminsettings');
+//   drupal_set_message($config->get('title'));
+//   drupal_set_message($config->get('hobby'));
+//   drupal_set_message($config->get('gender'));
+// }
+

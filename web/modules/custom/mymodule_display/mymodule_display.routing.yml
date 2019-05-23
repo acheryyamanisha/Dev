@@ -1,0 +1,8 @@
+mailbox_display.content:
+  path: '/admin/mymodule'
+  defaults:
+    _controller: 'Drupal\mymodule_display\Controller\MymoduleDisplay::content'
+    _title: 'Display of the values of the mymodule config form'
+  requirements:
+    _permission: 'access content'
+    _role: 'administrator'
