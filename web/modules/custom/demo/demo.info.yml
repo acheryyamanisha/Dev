@@ -1,0 +1,5 @@
+name: Demo controller
+description: custom services and dependency injections
+core: 8.x
+type: module
+package: Custom
