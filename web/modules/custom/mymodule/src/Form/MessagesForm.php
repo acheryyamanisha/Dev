@@ -42,16 +42,23 @@ class MessagesForm extends ConfigFormBase
           '#required' => true,
           '#default_value' => $config->get('title'),
         );
+
         $form['hobby'] = array(
           '#type' => 'select',
           '#description' => 'Select the desired hobby.',
-         '#options' => array(t('--- SELECT ---'), t('Badminton'), t('Reading novels'), t('Dancing')),
+         '#options' => array(
+          'select' => t('------SELECT------'),
+          'Badminton' => t('Badminton'),
+          'Reading Novels' => t('Reading Novels'),
+          'Cooking' => t('Cooking'),
+          'Hiking' => t('Hiking'),
+        ),
           '#title' => t('Hobby'),
           '#default_value' => $config->get('hobby'),
         );
         $options = array(
-          'male' => t('Male'),
-          'female' => t('Female'),
+          'Male' => t('Male'),
+          'Female' => t('Female'),
         );
         $form['gender'] = array(
           '#type' => 'radios',
